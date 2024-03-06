@@ -8,6 +8,7 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
+    "deploy": "npm run build && surge dist cyro-game.surge.sh"
   },
   "dependencies": {
     "react": "^18.2.0",
