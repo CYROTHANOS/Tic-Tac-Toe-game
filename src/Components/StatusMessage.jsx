@@ -1,6 +1,7 @@
 // eslint-disable-next-line react/prop-types
 import React from 'react';
-const StatusMessage = ({ winner, isXNext, squares }) => {
+const StatusMessage = ({ winner, gamingBoard }) => {
+  const { squares, isXNext } = gamingBoard;
   const noMovesLeft = squares.every(squareValue => squareValue !== null);
 
   const nextPlayer = isXNext ? 'Leander (X)' : 'Madhuri (O)';

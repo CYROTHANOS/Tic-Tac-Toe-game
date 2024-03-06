@@ -1,4 +1,5 @@
 import Square from './Square';
+
 const Board = ({ squares, handleSquareClick }) => {
   const renderSquare = position => {
     return (
